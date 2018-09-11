@@ -64,7 +64,3 @@ function sendData()
 
 end
 
-
-
-tmr.alarm(1,15000, tmr.ALARM_SINGLE, function() conectmqtt() end )
-tmr.alarm(2,5000, 1, function() sendData() end )
