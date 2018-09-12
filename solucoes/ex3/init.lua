@@ -1,12 +1,14 @@
---station_cfg={}
---station_cfg.ssid="certorio"
+wifi.setmode(wifi.STATION)
+
+station_cfg={}
+station_cfg.ssid="HackerSpace Maringa"
 --station_cfg.pwd= "jair"
---station_cfg.auto=true
---set = wifi.sta.config(station_cfg)
+station_cfg.auto=true
+set = wifi.sta.config(station_cfg)
 
 wifi.sta.connect()
 
-p=4 --não usar o 4 pois tem um led nele
+p=7 --não usar o 4 pois tem um led nele
 
 pwm.setup(p,500,0)
 pwm.start(p)

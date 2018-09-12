@@ -1,9 +1,3 @@
---station_cfg={}
---station_cfg.ssid="certorio"
---station_cfg.pwd= "jair"
---station_cfg.auto=true
---set = wifi.sta.config(station_cfg)
-
 wifi.setmode(wifi.SOFTAP)
 
 wifi.sta.connect()
